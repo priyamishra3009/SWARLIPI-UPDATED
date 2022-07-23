@@ -122,7 +122,7 @@ app.post("/login", (req, res) => {
     if (password == result[0].password) res.render("back.ejs");
   });
 });
-app.listen(5000, () => {
+app.listen(process.env.PORT||5000,process.env.IP, () => {
   console.log("server is running at 5000...");
 });
 
