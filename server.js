@@ -32,7 +32,7 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/"));
 
-app.get("/index", (req, res) => {
+app.get("/", (req, res) => {
   res.render("index.ejs");
 });
 
